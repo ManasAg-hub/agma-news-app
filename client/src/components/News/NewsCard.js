@@ -18,8 +18,8 @@ const NewsCard = ({ author, title, description, url, image, time, source }) => {
     <Card elevation={6} sx={{ maxWidth: 345, borderRadius:3 }}>
       <CardMedia component="img" height="200" image={i} alt={source} />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {title}
+        <Typography gutterBottom variant="h6" component="div">
+          {title.split('-')[0]}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {description}

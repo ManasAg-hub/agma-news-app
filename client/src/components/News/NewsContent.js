@@ -22,7 +22,7 @@ const NewsContent = () => {
   }, [category, NewsResults, country]);
 
   if (loading) return <LinearProgress />;
-  if(!loading && !newsList) return null;
+  if (!loading && !newsList) return null;
   if (!loading && newsList.length === 0)
     return (
       <Paper sx={{ m: "auto", width: 500 }} elevation={6}>
@@ -34,11 +34,12 @@ const NewsContent = () => {
     );
 
   return (
-    <Container sx={{ mt: 2, mb: 2 }}>
+    <Container sx={{ marginTop: "100px" }}>
       <Box>
         <Grid
           container
           spacing={4}
+          alignItems="stretch"
           direction="row"
           justifyContent="center"
           style={{ minHeight: "100vh" }}

@@ -9,7 +9,7 @@ const NewsContext = ({ children }) => {
   const [newsResults, setNewsResults] = useState();
   const [loading, setLoading] = useState(false);
   const [isDark, setIsDark] = useState(true);
-  const API = axios.create({ baseURL: "https://agma-news-app.herokuapp.com" });
+  const API = axios.create({ baseURL: "https://agma-news-backend.onrender.com" });
 
   const newsApi = async () => {
     setLoading(true);

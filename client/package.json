@@ -2,7 +2,7 @@
   "name": "create-react-app",
   "version": "5.0.0",
   "private": true,
-  "proxy":"https://agma-news-app.herokuapp.com",
+  "proxy":"https://agma-news-backend.onrender.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

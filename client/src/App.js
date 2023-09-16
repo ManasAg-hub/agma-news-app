@@ -5,14 +5,16 @@ import { theme, darkTheme } from "./theme";
 import Header from "./components/Header/Header";
 import NewsContent from "./components/News/NewsContent";
 import { NewsState } from "./Context";
+import Footer from "./components/Footer/Footer";
+import { Container } from "@mui/system";
 
 export default function App() {
-  const {isDark} = NewsState();
+  const { isDark } = NewsState();
   return (
-    <ThemeProvider theme={isDark?darkTheme:theme}>
+    <ThemeProvider theme={isDark ? darkTheme : theme}>
       <CssBaseline>
-        <Header />
-        <NewsContent />
+          <Header />
+          <NewsContent />
       </CssBaseline>
     </ThemeProvider>
   );
