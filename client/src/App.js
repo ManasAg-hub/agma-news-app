@@ -5,7 +5,6 @@ import { theme, darkTheme } from "./theme";
 import Header from "./components/Header/Header";
 import NewsContent from "./components/News/NewsContent";
 import { NewsState } from "./Context";
-import Footer from "./components/Footer/Footer";
 import { Container } from "@mui/system";
 
 export default function App() {
